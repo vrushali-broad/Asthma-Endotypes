@@ -1,0 +1,30 @@
+NR3C2 <-- Aldosterone
+Ang 1-9 <-- Angiotensin I * ACE2
+Angiotensin II <-- Angiotensin I * CMA1 + Angiotensin I * ACE + Angiotensin I * CTSG
+Angiotensin I <-- AGT * REN
+Bradykinin <-- KNG1 * ACE
+NOS3 <-- BDKRB2
+BDKRB2 <-- Bradykinin
+AGTR2 <-- Angiotensin II
+AGTR1 <-- Angiotensin II
+Prostacyclin <-- BDKRB2
+TFs <-- ATP6AP2 + AGTR1 + Ca++
+Ang 1-7 <-- Ang 1-9 + Angiotensin II * ACE2
+TGFB1 <-- TFs
+CYP11B2 <-- TFs
+Aldosterone <-- Deoxycorticosterone * CYP11B2
+ATP6AP2 <-- REN
+EDHF <-- BDKRB2
+MAS1 <-- Ang 1-7
+Ang 1-5 <-- Ang 1-7 * ACE
+BDKRB1 <-- Bradykinin
+ACE <-- !ACE Inhibitor
+Deoxycorticosterone <-- 1
+CTSG <-- 1
+AGT <-- 1
+ACE2 <-- 1
+KNG1 <-- 1
+Ca++ <-- 1
+CMA1 <-- 1
+REN <-- 1
+ACE Inhibitor <-- 1
