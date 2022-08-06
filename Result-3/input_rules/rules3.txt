@@ -1,0 +1,49 @@
+targets, factors
+Th0, !Treg
+Tc0, 1
+Mphi, 1
+Stimulant_I, 1
+Stimulant_II, 1
+Stimulant_III, tmp
+DC1, Stimulant_I 
+DC2, Stimulant_II
+DC3, Stimulant_III
+IL4, DC1 
+IL6, DC2 
+IL12, DC3
+Th9, Th2
+IL9, Th9
+IL13, Th2
+B_Cells, IL13 
+IgE, B_Cells  
+Mast_Cells, IL9 | IgE
+IL5, Mast_Cells | B_Cells
+Leukotrine, Mast_Cells
+Histamine, Mast_Cells
+PGD2, Mast_Cells
+IL3, Mast_Cells
+Basophils, IL3
+Epithelial_Cells, TNF_alpha
+Eotaxin, Epithelial_Cells & !M1
+Th2, Th0 & IL4 
+Th17, Th0 & (IL6 | TGF_beta) 
+Th1, Th0 & IL12 
+TGF_beta, Epithelial_Cells & IL6 | IL2
+TGF_beta_high, TGF_beta & IL2
+M2, Mphi & TGF_beta_high
+Treg, 0 & (TGF_beta_high | M2)
+Tc, Tc0 & IL21 & !IL5 | Tc0 & IFN_gamma
+IL17, Th17
+IL21, Th17 
+TNF_alpha, Th17
+IL8, Epithelial_Cells | M1
+Neutrophils, IL8
+IFN_gamma, Th1
+M1, Mphi & Tc | Mphi & IL17
+IL2, Th1
+Eosinophils, Eotaxin & Th2 | Th2 & IL5
+tmp, !t1
+t1, t2
+t2, !t3
+t3, tmp
+
