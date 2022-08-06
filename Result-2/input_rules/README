@@ -1,0 +1,5 @@
+File Description:
+
+1.basal_rules.txt - In this set of rules, all T cells (Th2, Th17, and Th1) including T-reg are set to HIGH(1). This serves as a healthy baseline with inactive immune response.
+2.rules.txt - In this set of rules, T-reg is always set to INACTIVE (0) to study diverse immune responses in asthma.
+

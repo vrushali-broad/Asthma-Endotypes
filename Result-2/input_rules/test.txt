@@ -1,0 +1,8 @@
+targets, factors
+A, tmp & !C
+C, !A
+tmp, !t1
+t1, t2
+t2, !t3
+t3, tmp
+
