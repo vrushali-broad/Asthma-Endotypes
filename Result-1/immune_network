@@ -1,0 +1,47 @@
+DC1 <-- Stimulant_I
+DC2 <-- Stimulant_II
+DC3 <-- Stimulant_III
+IL4 <-- DC1
+IL6 <-- DC2
+IL12 <-- DC3
+Th9 <-- Th2
+IL9 <-- Th9
+IL13 <-- Th2
+B_Cells <-- IL13
+IgE <-- B_Cells
+Mast_Cells <-- IL9 + IgE
+IL5 <-- Mast_Cells + B_Cells
+Histamine <-- Mast_Cells
+Leukotrine <-- Mast_Cells
+PGD2 <-- Mast_Cells
+IL3 <-- Mast_Cells
+Basophils <-- IL3
+Epithelial_Cells <-- TNF_alpha
+TNF_alpha <-- Th17
+Eotaxin <--  [Epithelial_Cells] * !M1
+Th2 <--  [IL4 * Th0] * !Th1
+Th17 <--  [IL6 * Th0 + TGF_beta * Th0] * !Th2 * !Th1
+Th1 <--  [IL12 * Th0] * !Th2
+TGF_beta <-- IL6 * Epithelial_Cells + IL2
+TGF_beta_high <-- IL2 * TGF_beta
+M2 <-- TGF_beta_high * Mphi
+Treg <-- TGF_beta_high + M2
+Tc <-- Tc0 * IL21 * !IL5 + IFN_gamma * Tc0
+IL17 <-- Th17
+IL21 <-- Th17
+IL8 <-- Epithelial_Cells + M1
+Neutrophils <-- IL8
+IFN_gamma <-- Th1
+M1 <-- Tc * Mphi + IL17 * Mphi
+IL2 <-- Th1
+Eosinophils <-- Th2 * Eotaxin + Th2 * IL5
+t1 <-- t2
+t3 <-- tmp
+Th0 <-- !Treg
+tmp <-- !t1
+t2 <-- !t3
+Stimulant_II <-- 1
+Stimulant_III <-- 1
+Stimulant_I <-- 1
+Mphi <-- 1
+Tc0 <-- 1

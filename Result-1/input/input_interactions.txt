@@ -1,0 +1,59 @@
+modifiers	products	reactants	type
+Treg	Th0	 	Inhibition
+Stimulant_I	DC1	 	Activation
+Stimulant_II	DC2	 	Activation
+Stimulant_III	DC3	 	Activation
+DC1	IL4	 	Activation
+DC2	IL6	 	Activation
+DC3	IL12	 	Activation
+Th2	Th9	 	Activation
+Th9	IL9	 	Activation
+Th2	IL13	 	Activation
+IL13	B_Cells	 	Activation
+B_Cells	IgE	 	Activation
+IL9	Mast_Cells	 	Activation
+IgE	Mast_Cells	 	Activation
+Mast_Cells	IL5	 	Activation
+B_Cells	IL5	 	Activation
+Mast_Cells	Histamine	 	Activation
+Mast_Cells	Leukotrine	 	Activation
+Mast_Cells	PGD2	 	Activation
+Mast_Cells	IL3	 	Activation
+IL3	Basophils	 	Activation
+TNF_alpha	Epithelial_Cells	 	Activation
+Th17	TNF_alpha	 	Activation
+Epithelial_Cells	Eotaxin	 	Activation
+M1	Eotaxin	 	Inhibition
+Th0	Th2	IL4	Activation
+Th1	Th2	 	Inhibition
+Th0	Th17	IL6	Activation
+Th0	Th17	TGF_beta	Activation
+Th2	Th17	 	Inhibition
+Th1	Th17	 	Inhibition
+Th0	Th1	IL12	Activation
+Th2	Th1	 	Inhibition
+Epithelial_Cells	TGF_beta	IL6	Activation
+IL2	TGF_beta	 	Activation
+TGF_beta	TGF_beta_high	IL2	Activation
+Mphi	M2	TGF_beta_high	Activation
+TGF_beta_high	Treg	 	Activation
+M2 	Treg	 	Activation
+IL5 	Tc	Tc0,IL21	neg_activation
+Tc0	Tc	IFN_gamma	Activation
+Th17	IL17	  	Activation
+Th17	IL21	 	Activation
+Epithelial_Cells	IL8	  	Activation
+M1	IL8	  	Activation
+IL8	Neutrophils	  	Activation
+Th1	IFN_gamma	  	Activation
+Mphi	M1	Tc	Activation
+Mphi	M1	IL17	Activation
+Th1	IL2	 	Activation
+Eotaxin	Eosinophils	Th2	Activation
+IL5	Eosinophils	Th2	Activation
+t1	tmp	 	Inhibition
+t3	t2	 	Inhibition
+t2	t1	 	Activation
+tmp	t3	 	Activation
+
+
